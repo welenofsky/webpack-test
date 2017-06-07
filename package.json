@@ -7,7 +7,8 @@
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
     "start": "http-server",
     "test": "mocha",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "mocha": "mocha test/unit --compilers js:babel-core/register"
   },
   "keywords": [],
   "author": "",

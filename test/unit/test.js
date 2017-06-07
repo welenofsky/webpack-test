@@ -1,13 +1,11 @@
-var assert = require('assert');
-var chai = require('chai');
-var chaiAsPromised = require("chai-as-promised");
-
-chai.use(chaiAsPromised);
-var assert = chai.assert;
-
+import chai from 'chai';
+import chaiAsPromised from "chai-as-promised";
 import Promise from 'promise-polyfill';
 import fetch from 'isomorphic-fetch';
 import * as jwlib from '../../app/jwlib';
+
+chai.use(chaiAsPromised);
+var assert = chai.assert;
 
 describe('fetch_wrapper', function() {
   describe('does_exist?', function(){
